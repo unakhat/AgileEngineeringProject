@@ -43,6 +43,13 @@ public class CalculatorTest {
         TestCase.assertEquals(1.5,x.divide());
 
     }
+    @Test
+    public void twopowerthreeeight()
+    {
+        Calculator x=new Calculator(2.0,3.0);
+        TestCase.assertEquals(8.0,x.power());
+
+    }
 
 
 
