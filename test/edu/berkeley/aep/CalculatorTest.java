@@ -14,7 +14,7 @@ public class CalculatorTest {
     public void add()
     {
         Calculator x=new Calculator(4.0,3.0);
-        TestCase.assertEquals(1.0,x.subtract());
+        TestCase.assertEquals(7.0,x.add());
 
     }
 
