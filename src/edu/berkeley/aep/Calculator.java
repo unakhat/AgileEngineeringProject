@@ -39,5 +39,12 @@ public class Calculator {
 
         return answer;
     }
+    
+     double modulus()
+
+    {
+        return a%b;
+
+    }
 
 }
