@@ -35,6 +35,14 @@ public class CalculatorTest {
         TestCase.assertEquals(6.0,x.multiply());
 
     }
+  
+    @Test
+    public void dividethreebytwoequalonepointfive()
+    {
+        Calculator x=new Calculator(3.0,2.0);
+        TestCase.assertEquals(1.5,x.divide());
+
+    }
 
 
 
