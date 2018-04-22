@@ -20,17 +20,17 @@ public class Calculator {
         return answer;
     }
 
-    double multiply(double a, double b) {
+    double multiply() {
         double answer = a*b;
         return answer;
     }
 
-    double divide(double a, double b) {
+    double divide() {
         double answer = a/b;
         return answer;
     }
 
-    double power(double a, double b){
+    double power(){
         double answer =a;
 
         for (int x=2; x<=b; x++){
