@@ -4,13 +4,16 @@ import junit.framework.TestCase;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import org.junit.rules.ExpectedException;
+import org.junit.Rule;
+
+
 
 import java.util.*;
 
 public class CalculatorTest {
 
 
-  
     @Test
     public void addfourplusequalseven()
     {
@@ -27,7 +30,7 @@ public class CalculatorTest {
         TestCase.assertEquals(7.0,x.add());
 
     }
-  
+
     @Test
     public void multiplythreeandtwosix()
     {
@@ -35,7 +38,7 @@ public class CalculatorTest {
         TestCase.assertEquals(6.0,x.multiply());
 
     }
-  
+
     @Test
     public void dividethreebytwoequalonepointfive()
     {
@@ -43,6 +46,7 @@ public class CalculatorTest {
         TestCase.assertEquals(1.5,x.divide());
 
     }
+
     @Test
     public void twopowerthreeeight()
     {
@@ -50,19 +54,31 @@ public class CalculatorTest {
         TestCase.assertEquals(8.0,x.power());
 
     }
-   @Test
+
+    @Test
     public void fourmodules3equalsone()
     {
         Calculator x=new Calculator(4.0,3.0);
         TestCase.assertEquals(1.0,x.modulus());
 
     }
-  @Test
+
+
+    @Test
     public void addsevenpluseightequalsfifteen()
     {
         Calculator x=new Calculator(7.0,8.0);
         TestCase.assertEquals(15.0,x.add());
 
+    }
+
+    @Rule
+    public ExpectedException thrown= ExpectedException.none();
+    @Test
+    public void dividebyzeroexception()
+    {
+        Calculator x=new Calculator(7.0,0.0);
+        x.divide();
     }
 
 
