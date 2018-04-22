@@ -57,7 +57,13 @@ public class CalculatorTest {
         TestCase.assertEquals(1.0,x.modulus());
 
     }
+  @Test
+    public void addsevenpluseightequalsfifteen()
+    {
+        Calculator x=new Calculator(7.0,8.0);
+        TestCase.assertEquals(15.0,x.add());
 
+    }
 
 
 }
