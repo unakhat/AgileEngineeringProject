@@ -10,7 +10,7 @@ public class Calculator {
         this.b = b;
     }
 
-    double add(double a, double b) {
+    double add() {
         double answer = a+b;
         return answer;
     }
