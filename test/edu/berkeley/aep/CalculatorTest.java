@@ -50,6 +50,13 @@ public class CalculatorTest {
         TestCase.assertEquals(8.0,x.power());
 
     }
+   @Test
+    public void fourmodules3equalsone()
+    {
+        Calculator x=new Calculator(4.0,3.0);
+        TestCase.assertEquals(1.0,x.modulus());
+
+    }
 
 
 
