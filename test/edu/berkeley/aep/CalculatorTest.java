@@ -103,6 +103,14 @@ public class CalculatorTest {
         TestCase.assertEquals(4.0,x.power());
 
     }
+    
+    @Test
+    public void modulusofnegativenumber()
+    {
+        Calculator x=new Calculator(-5.0,2.0);
+        TestCase.assertEquals(1.0,x.modulus());
+
+    }
 
 
 }
