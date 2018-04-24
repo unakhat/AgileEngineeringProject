@@ -31,6 +31,8 @@ public class Calculator {
     }
 
     double power(){
+         if(b==0)
+            return 1;
         double answer =a;
 
         for (int x=2; x<=b; x++){
