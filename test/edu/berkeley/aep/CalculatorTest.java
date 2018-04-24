@@ -87,6 +87,14 @@ public class CalculatorTest {
         TestCase.assertEquals(1.0,x.power());
 
     }
+    
+    @Test
+    public void multiplythreewithzerogiveszero()
+    {
+        Calculator x=new Calculator(3.0,0.0);
+        TestCase.assertEquals(0.0,x.multiply());
+
+    }
 
 
 }
