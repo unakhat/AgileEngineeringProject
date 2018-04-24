@@ -95,6 +95,14 @@ public class CalculatorTest {
         TestCase.assertEquals(0.0,x.multiply());
 
     }
+    
+    @Test
+    public void twopowertwoisfour()
+    {
+        Calculator x=new Calculator(2.0,2.0);
+        TestCase.assertEquals(4.0,x.power());
+
+    }
 
 
 }
