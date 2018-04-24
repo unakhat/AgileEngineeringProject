@@ -80,6 +80,13 @@ public class CalculatorTest {
         Calculator x=new Calculator(7.0,0.0);
         x.divide();
     }
+    @Test
+    public void twopowerzeroone()
+    {
+        Calculator x=new Calculator(2.0,0.0);
+        TestCase.assertEquals(1.0,x.power());
+
+    }
 
 
 }
