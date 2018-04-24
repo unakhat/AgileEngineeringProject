@@ -45,7 +45,10 @@ public class Calculator {
      double modulus()
 
     {
-        return a%b;
+       double ret = a % b;
+        if(ret < 0)
+            ret+=b;
+        return ret;
 
     }
 
